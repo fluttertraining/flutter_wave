@@ -51,18 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Expanded(
                     child: Container(
                       padding: EdgeInsets.only(top: 24),
-                      child: LayoutBuilder(
-                        builder: (BuildContext context, BoxConstraints size) =>
-                            ListView.builder(
-                              itemCount: events.length,
-                              itemBuilder: (context, ndx) {
-                                return new CardItem(
-                                  title: events[ndx],
-                                  maxWidth: size.maxWidth - 1.5,
-                                );
-                              },
-                            ),
-                      ),
+                      child: new _EventList(events: events),
                     ),
                   )
                 ],
@@ -73,6 +62,30 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       iosContentPadding: false,
       iosContentBottomPadding: false,
+    );
+  }
+}
+
+class _EventList extends StatelessWidget {
+  const _EventList({
+    Key key,
+    @required this.events,
+  }) : super(key: key);
+
+  final List<String> events;
+
+  @override
+  Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (BuildContext context, BoxConstraints size) => ListView.builder(
+            itemCount: events.length,
+            itemBuilder: (context, ndx) {
+              return new CardItem(
+                title: events[ndx],
+                maxWidth: size.maxWidth - 1.5,
+              );
+            },
+          ),
     );
   }
 }
