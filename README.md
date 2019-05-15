@@ -2,5 +2,5 @@
 
 ### Original Dribbble Design - (Here)[https://dribbble.com/shots/5675433-Lifestyle/attachments]
 
-!['Screenshot'](https://github.com/fluttertraining/flutter_wave/docs/screenshot.png)
-!['Gif'](https://github.com/fluttertraining/flutter_wave/docs/demo_vid.gif)
+!['Screenshot'](https://github.com/fluttertraining/flutter_wave/blob/master/docs/screenshot.png)
+!['Gif'](https://github.com/fluttertraining/flutter_wave/blob/master/docs/demo_vid.gif)
