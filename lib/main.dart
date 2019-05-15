@@ -39,15 +39,15 @@ class _MyHomePageState extends State<MyHomePage> {
         bottom: false,
         child: Stack(
           children: <Widget>[
-            _WaveBg(marginTop: 50),
+            new _WaveBg(marginTop: 50),
             Container(
               padding: EdgeInsets.only(top: 12, right: 24, left: 24),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  _Header(),
+                  new _Header(),
                   SizedBox(height: 65),
-                  _Transactions(),
+                  new _Transactions(),
                   Expanded(
                     child: Container(
                       padding: EdgeInsets.only(top: 24),
